@@ -28,12 +28,12 @@ terraform apply
 ####  **Note: Terraform will reqier credentials from GitHub and name of project in Google Cloud**
 
 ### 2. Created Resources
-			2.1 K8S cluster
-			![image](doc/cluster.png)
-			2.2 Repo in Github
-			![image](doc/repo.png)
-			2.3 Flux in K8s cluster
-			![image](doc/flux.png)
+		2.1 K8S cluster
+![K8S cluster](doc/cluster.png)
+		2.2 Repo in Github
+![Repo](doc/repo.png)
+		2.3 Flux in K8s cluster
+![Flux](doc/flux.png)
 ### 3. In repo **flux-gitops**/cluster create folder for app deployment
 
 #### 3.1 ns.yaml
