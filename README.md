@@ -29,11 +29,11 @@ terraform apply
 
 ### 2. Created Resources
 			2.1 K8S cluster
-			img
+			![image](./doc/cluster.png)
 			2.2 Repo in Github
-			img
+			![image](./doc/repo.png)
 			2.3 Flux in K8s cluster
-			img
+			![image](./doc/flux.png)
 ### 3. In repo **flux-gitops**/cluster create folder for app deployment
 
 #### 3.1 ns.yaml
