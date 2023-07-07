@@ -35,17 +35,17 @@ terraform apply
 			2.3 Flux in K8s cluster
 			img
 ### 3. In repo **flux-gitops**/cluster create folder for app deployment
-				3.1 ns.yaml
-				``` 
-				apiVersion: v1
-				kind: Namespace
-				metadata:
-				  name: demo
-				```
-                
-				3.2 kbot-gr.yaml
-    ```
-        ---
+
+#### 3.1 ns.yaml
+``` 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: demo
+```
+
+#### 3.2 kbot-gr.yaml
+```
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
@@ -56,11 +56,10 @@ spec:
   interval: 1m0s
   ref:
     branch: docker-flux
-    ```
+```
 
-				3.3 kbot-hr.yaml
-    ``` 
-  ---
+#### 3.3 kbot-hr.yaml
+``` 
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -75,5 +74,5 @@ spec:
         kind: GitRepository
         name: kbot
   interval: 1m0s
-    ```
+```
     
