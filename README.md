@@ -75,4 +75,4 @@ spec:
         name: kbot
   interval: 1m0s
 ```
-    
+#### Option:  ```reconcileStrategy: Revision``` means that **flux** will re-deploy an application after each commit in **kbot** repo
